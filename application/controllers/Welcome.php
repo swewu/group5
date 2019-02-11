@@ -33,13 +33,17 @@ class Welcome extends CI_Controller {
 	}
 	public function checkLogin(){
 		$id  = isset($_GET['username'])?$_GET['username']:"";
+		
 		$pass = isset($_GET['password'])?$_GET['password']:"";
 		$this->load->model('UserModel');
 		$result = $this->UserModel->Login($id,$pass);
 		if($result){
-			if($_SESSION['role'] == 1){
+			// echo($_SESSION['role']);
+			
+			if($_SESSION['role'] == "นักศึกษา"){
+				
 				redirect('Welcome/student');
-			}else if($_SESSION['role'] == 2){
+			}else if($_SESSION['role'] == "อาจารย์"){
 				redirect('Welcome/teacher');
 			}
 			
@@ -57,9 +61,53 @@ class Welcome extends CI_Controller {
 		$result = $this->UserModel->insert($studentname);
 		if($result){
 			echo "Success";
+			return alert("success");
 			
 			
 		}
+			
+	}
+
+	public function delete(){
+		$historyid  = isset($_GET['historyid'])?$_GET['historyid']:"";
+		// $pass = isset($_GET['password'])?$_GET['password']:"";
+
+		$this->load->model('UserModel');
+		$isCheck = $this->UserModel->check($historyid);
+		if($isCheck == false){
+			$result = $this->UserModel->delete($historyid);
+			if($result == true){
+				echo "Success";
+				return alert("success");
+				
+				
+			}
+		}
+		
+			
+	}
+	public function update(){
+		$historyid  = isset($_GET['historyid'])?$_GET['historyid']:"";
+		$studentname  = isset($_GET['historyid'])?$_GET['historyid']:"";
+		$courseid  = isset($_GET['historyid'])?$_GET['historyid']:"";
+		$coursname  = isset($_GET['historyid'])?$_GET['historyid']:"";
+		$term  = isset($_GET['historyid'])?$_GET['historyid']:"";
+		$year  = isset($_GET['historyid'])?$_GET['historyid']:"";
+		$studentid  = isset($_GET['historyid'])?$_GET['historyid']:"";
+		// $pass = isset($_GET['password'])?$_GET['password']:"";
+
+		$this->load->model('UserModel');
+		$isCheck = $this->UserModel->check($historyid);
+		if($isCheck == false){
+			$result = $this->UserModel->delete($historyid);
+			if($result == true){
+				echo "Success";
+				return alert("success");
+				
+				
+			}
+		}
+		
 			
 	}
 	
