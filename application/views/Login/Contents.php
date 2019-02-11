@@ -69,36 +69,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body style="background-color: #2542ff;">
 
-<!-- <div class="container">
+<div class="container">
 	<div class="card" style="width: 50%; margin-left: 25%; margin-top: 10%; font-family: 'Kanit', sans-serif;">
 		<div class="card-body">
 			<h1 style="font-family: 'Kanit', sans-serif; font-size: 30px;">ระบบบันทึกรายวิชาที่ตกค้าง</h1>
-			<form id="login">
+			<form action="<?php echo site_url('Welcome/checkLogin') ?>" method="get">
 				<div class="form-group">
 					<label for="exampleInputEmail1">ชื่อผู้ใช้งาน</label>
-					<input type="email" class="form-control" id="username" name="username" aria-describedby="emailHelp" placeholder="ชื่อผู้ใช้งาน">
+					<input type="text" class="form-control" id="username" name="username"  placeholder="ชื่อผู้ใช้งาน">
 				</div>
 				<div class="form-group">
 					<label for="exampleInputPassword1">รหัสผ่าน</label>
-					<input type="password" class="form-control" id="firstname" name="firstname" placeholder="รหัสผ่าน">
+					<input type="password" class="form-control" id="password" name="password" placeholder="รหัสผ่าน">
 				</div>
-				<div class="form-group form-check">
+				<!-- <div class="form-group form-check">
 					<input type="checkbox" class="form-check-input" id="exampleCheck1">
 					<label class="form-check-label" for="exampleCheck1">Check me out</label>
-				</div>
+				</div> -->
 				
 					<button type="login" class="btn btn-primary">Submit</button>
 				</a>
 			</form>
 		</div>
 	</div>
-</div> -->
+</div>
 
-<form action="<?php echo base_url('Login/login') ?>" method="get">
+<!-- <form action="<?php echo base_url('Login/login') ?>" method="get">
 	<input type="text" name="id" placeholder="id" required>
 	<input type="text" name="password" placeholder="password" required>
 	<input type="submit" value="Login"></form>
 </form>
 
 </body>
-</html>
+</html> -->

@@ -31,12 +31,25 @@ class Welcome extends CI_Controller {
 		$this->load->view('Course');
 		$this->load->view('Script');
 	}
-	public function Login()
-	{
-		$this->load->view('Login/Contents');
-		
+	public function checkLogin(){
+		$id  = isset($_GET['username'])?$_GET['username']:"";
+		$pass = isset($_GET['password'])?$_GET['password']:"";
+		$this->load->model('UserModel');
+		$result = $this->UserModel->checkLogin($id,$pass);
+		if($result){
+			if($_SESSION['role'] == 1){
+				redirect('Welcome/student');
+			}else if($_SESSION['role'] == 2){
+				redirect('Welcome/teacher');
+			}
+			
+			
+		}
+			
 	}
-
+	public function login(){
+		$this->load->view("Login/Contents");
+	}
 	
 
 }

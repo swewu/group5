@@ -1,22 +1,22 @@
 <script>
-$("#login").validate({
-    rules:{
-        username :{
-            require : true
-        },
-        password:{
-            require : false
-        }
-    },
-    messages:{
-        username:{
-            require : "กรุณาลงชื่อ"
-        },
-        password : {
-            require : "กรุณาใส่รหัสผ่าน"
-        }
-    }
-});
+// $("#login").validate({
+//     rules:{
+//         username :{
+//             require : true
+//         },
+//         password:{
+//             require : false
+//         }
+//     },
+//     messages:{
+//         username:{
+//             require : "กรุณาลงชื่อ"
+//         },
+//         password : {
+//             require : "กรุณาใส่รหัสผ่าน"
+//         }
+//     }
+// });
 
 $("#login").submit(function(){
     login();
@@ -24,9 +24,8 @@ $("#login").submit(function(){
 
 function login(){
     event.preventDefault();
-    var isValid = $("#login");
+    // var isValid = $("#login");
 
-    if(isValid){
         var data = {
             "username":("#username").val(),
             "password":("#password").val()
@@ -36,7 +35,7 @@ function login(){
         function (data,textStatus,jqXHR) {
             var message = data.message;
         });
-    }
+    
 }
 //ตรวจสอบsubmitใช้สำหรับปุ่มsubmit
 // login.submit(function(event){
