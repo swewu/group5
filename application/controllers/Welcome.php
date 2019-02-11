@@ -26,4 +26,17 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('Students/Contents');
 	}
+	public function Course()
+	{
+		$this->load->view('Course');
+		$this->load->view('Script');
+	}
+	public function Login()
+	{
+		$this->load->view('Login/Contents');
+		
+	}
+
+	
+
 }
