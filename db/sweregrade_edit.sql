@@ -56,6 +56,20 @@ CREATE TABLE sweregrade.`user` (
   `role` varchar(10) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`userid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58142753', 'swezaza01', 'นางสาวประภาพร', 'มั่งมี', 'นักศึกษา');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58143033', 'swezaza02', 'นายพงศธร', 'จันด้วง', 'นักศึกษา');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58143900', 'swezaza03', 'นายมูฮัมหมัดมะฮ์ดี', 'ราโอ๊ะ', 'นักศึกษา');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58144239', 'swezaza04', 'นายลิขสิทธิ์', 'สุขชาญ', 'นักศึกษา');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58144924', 'swezaza05', 'นายศุภณัฐ', 'คุ้มปิยะผล', 'นักศึกษา');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58145236', 'swezaza06', 'นางสาวสุดารัตน์', 'ผิวอ่อน', 'นักศึกษา');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58147406', 'swezaza07', 'นายธนากร', ' ลิ้มสกุล', 'นักศึกษา');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58148602', 'swezaza08', 'นางสาวสิริพร', 'พุทธวิริยะ', 'นักศึกษา');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58149840', 'swezaza09', 'นายอลีฟ', 'รักไทรทอง', 'นักศึกษา');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58162660', 'swezaza10', 'นายสมศักดิ์', 'หมั่นถนอม', 'นักศึกษา');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58162694', 'swezaza11', 'นายสหรัฐ', 'รักดำ', 'นักศึกษา');
+
+
 --
 -- Indexes for dumped tables
 --
