@@ -14,7 +14,7 @@ class UserModel extends CI_Model
         $this->db->insert('user', $data);
         return ($this->db->affected_rows() != 1) ? false : true;
     }
-    public function checkLogin($id, $pass){
+    public function Login($id, $pass){
 		$sql ="SELECT * FROM user where username = '".$id."' and password = '".$pass."' ";
 		// var_dump($sql);
 		$query = $this->db->query($sql);
@@ -22,7 +22,7 @@ class UserModel extends CI_Model
 		if($query){
 			foreach ($query->result() as $row ) {
 				if($row->password == $pass){
-					// $_SESSION['login'] = 1;
+					$_SESSION['login'] = 1;
 					$_SESSION['userid'] = $row->userid;
 					$_SESSION['username'] = $row->username; 
 					$_SESSION['role'] = $row ->role;	
@@ -32,5 +32,13 @@ class UserModel extends CI_Model
         }
         var_dump($result);
 		return $result;
+    }
+
+    public function insert($studentname){
+        $data = array(
+            'studentid' => null,
+            'studentname' => $studentname
+        );
+        $this->db->insert('student', $data);
     }
 }

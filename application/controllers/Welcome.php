@@ -35,7 +35,7 @@ class Welcome extends CI_Controller {
 		$id  = isset($_GET['username'])?$_GET['username']:"";
 		$pass = isset($_GET['password'])?$_GET['password']:"";
 		$this->load->model('UserModel');
-		$result = $this->UserModel->checkLogin($id,$pass);
+		$result = $this->UserModel->Login($id,$pass);
 		if($result){
 			if($_SESSION['role'] == 1){
 				redirect('Welcome/student');
@@ -49,6 +49,18 @@ class Welcome extends CI_Controller {
 	}
 	public function login(){
 		$this->load->view("Login/Contents");
+	}
+	public function insert(){
+		$studentname  = isset($_GET['studentname'])?$_GET['studentname']:"";
+		// $pass = isset($_GET['password'])?$_GET['password']:"";
+		$this->load->model('UserModel');
+		$result = $this->UserModel->insert($studentname);
+		if($result){
+			echo "Success";
+			
+			
+		}
+			
 	}
 	
 
