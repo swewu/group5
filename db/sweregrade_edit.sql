@@ -69,16 +69,17 @@ INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`
 INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58162660', 'swezaza10', 'นายสมศักดิ์', 'หมั่นถนอม', 'นักศึกษา');
 INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58162694', 'swezaza11', 'นายสหรัฐ', 'รักดำ', 'นักศึกษา');
 
-INSERT INTO `sweregrade`.`user` (`username`, `Firstname`, `Lastname`) VALUES ('1020001', 'กรัณรัตน์', 'ธรรมรักษ์');
-INSERT INTO `sweregrade`.`user` (`username`, `Firstname`, `Lastname`) VALUES ('1202002', 'กาญจน์นัฐฐา', 'ไชยศรียา');
-INSERT INTO `sweregrade`.`user` (`username`, `Firstname`, `Lastname`) VALUES ('1303002', 'กาญจนา', 'หฤหรรษพงศ์');
-INSERT INTO `sweregrade`.`user` (`username`, `Firstname`, `Lastname`) VALUES ('1400214', 'โกสินทร์', 'กาฬรัตน์');
-INSERT INTO `sweregrade`.`user` (`username`, `Firstname`, `Lastname`) VALUES ('1034003', 'ขุนดี', 'หลำสุบ');
-INSERT INTO `sweregrade`.`user` (`username`, `Firstname`, `Lastname`) VALUES ('1023360', 'อุหมาด', 'หมัดอาด้ำ');
-INSERT INTO `sweregrade`.`user` (`username`, `Firstname`, `Lastname`) VALUES ('1101002', 'ประทีป', 'คงกล้า');
-INSERT INTO `sweregrade`.`user` (`username`, `Firstname`, `Lastname`) VALUES ('1022009', 'ฐิมาพร', 'เพชรแก้ว');
-INSERT INTO `sweregrade`.`user` (`username`, `Firstname`, `Lastname`) VALUES ('1500256', 'พุทธิพร', 'ธนธรรมเมธี');
-INSERT INTO `sweregrade`.`user` (`username`, `Firstname`, `Lastname`) VALUES ('1033025', 'เยาวเรศ', 'ศิริสถิตย์กุล');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('1020001', 'swe001', 'กรัณรัตน์', 'ธรรมรักษ์', 'อาจารย์');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('1202002', 'swe002', 'กาญจน์นัฐฐา', 'ไชยศรียา', 'อาจารย์');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('1303002', 'swe003', 'กาญจนา', 'หฤหรรษพงศ์', 'อาจารย์');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('1400214', 'swe004', 'โกสินทร์', 'กาฬรัตน์', 'อาจารย์');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('1034003', 'swe005', 'ขุนดี', 'หลำสุบ', 'อาจารย์');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('1023360', 'swe006', 'อุหมาด', 'หมัดอาด้ำ', 'อาจารย์');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('1101002', 'swe007', 'ประทีป', 'คงกล้า', 'อาจารย์');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('1022009', 'swe008', 'ฐิมาพร', 'เพชรแก้ว', 'อาจารย์');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('1500256', 'swe009', 'พุทธิพร', 'ธนธรรมเมธี', 'อาจารย์');
+INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('1033025', 'swe010', 'เยาวเรศ', 'ศิริสถิตย์กุล', 'อาจารย์');
+
 --
 -- Indexes for dumped tables
 --
