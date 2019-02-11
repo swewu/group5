@@ -39,38 +39,41 @@
   <div class="row" style="width: 30rem;">
     <div class="col">
     <label for="Id">ชื่อ : </label>
-      <input type="text" class="form-control" placeholder="ชื่อ">
+      <input type="text" class="form-control" name ="studentname" placeholder="ชื่อ">
     </div>
     <div class="col">
     <label for="Id">นามสกุล : </label>
-      <input type="text" class="form-control" placeholder="นามสกุล">
+      <input type="text" class="form-control" name = "studentlastname" placeholder="นามสกุล">
     </div>
   </div>
   <br>
   <div class="row" style="width: 30rem;">
     <div class="col">
     <label for="Id">รหัสวิชา : </label>
-      <input type="text" class="form-control" placeholder="รหัสวิชา">
+      <input type="text" class="form-control" name="courseid" placeholder="รหัสวิชา">
     </div>
     <div class="col">
     <label for="Id">ชื่อวิชา : </label>
-      <input type="text" class="form-control" placeholder="ชื่อวิชา">
+      <input type="text" class="form-control"name="coursename" placeholder="ชื่อวิชา">
+    </div>
+  </div>
+  <div class="col">
+    <label for="Id">เกรด : </label>
+      <input type="text" class="form-control"name="grade" placeholder="ชื่อวิชา">
     </div>
   </div>
   <br>
   <div class="row" style="width: 30rem;">
     <div class="col">
     <label for="Id">เทอม : </label>
-      <input type="text" class="form-control" placeholder="เทอม">
+      <input type="text" class="form-control"name="term" placeholder="เทอม">
     </div>
     <div class="col">
     <label for="Id">ปีการศึกษา : </label>
-      <input type="text" class="form-control" placeholder="ปีการศึกษา">
+      <input type="text" class="form-control"name="year" placeholder="ปีการศึกษา">
     </div>
     <div class="col">
-    <label for="Id">ชื่อวิชา : </label>
-      <input type="text" class="form-control" placeholder="ชื่อวิชา">
-    </div>
+    
   </div>
   <br>
   <div align="center">

@@ -87,12 +87,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<label class="form-check-label" for="exampleCheck1">Check me out</label>
 				</div> -->
 				
+				
 					<button type="login" class="btn btn-primary">Submit</button>
 				</a>
 			</form>
 		</div>
 	</div>
 </div>
+
 
 <!-- <form action="<?php echo base_url('Login/login') ?>" method="get">
 	<input type="text" name="id" placeholder="id" required>

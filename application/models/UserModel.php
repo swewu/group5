@@ -34,7 +34,7 @@ class UserModel extends CI_Model
 		return $result;
     }
 
-    public function insert($studentname, $courseid, $coursename, $term, $year, $grade, $status){
+    public function insert($studentname,$studentlastname, $courseid, $coursename, $term, $year, $grade, $status){
         $data = array(
             'historyid' => null,
             'studentname' => $studentname,
@@ -44,7 +44,8 @@ class UserModel extends CI_Model
             'term' => $term,
             'year' => $year,
             'grade' => $grade,
-            'status' => 1
+            'status' => 1,
+            'studentlastname' => $studentlastname
 
         );
         $this->db->insert('historygrade', $data);
