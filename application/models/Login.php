@@ -9,7 +9,7 @@ class Login extends CI_Model {
         foreach ($query->result() as $row ){
             $_SESSION['username'] = $row->username;
             $_SESSION['password'] = $row->password;
-            $_SESSION['login'] = true;
+            $_SESSION['login'] = true;;
         }
     }
     
