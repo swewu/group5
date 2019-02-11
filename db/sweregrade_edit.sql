@@ -36,26 +36,34 @@ DROP TABLE IF EXISTS  sweregrade.`historygrade`;
 
 CREATE TABLE sweregrade.`historygrade` (
   `historyid` int(18) NOT NULL auto_increment,
-  `studentid` varchar(10) COLLATE utf8_bin NOT NULL,
-  `studentname` varchar(45) COLLATE utf8_bin NOT NULL,
-  `courseid` varchar(10) COLLATE utf8_bin NOT NULL,
-  `coursename` varchar(45) COLLATE utf8_bin NOT NULL,
+  `studentid` varchar(10) COLLATE utf8_general_ci NOT NULL,
+  `studentname` varchar(45) COLLATE utf8_general_ci NOT NULL,
+  `courseid` varchar(10) COLLATE utf8_general_ci NOT NULL,
+  `coursename` varchar(45) COLLATE utf8_general_ci NOT NULL,
   `term` int(5) NOT NULL,
   `year` int(5) NOT NULL,
-  `grade` int(3) NOT NULL,
+  `grade` VARCHAR(2) NOT NULL,
   PRIMARY KEY (`historyid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentname`, `courseid`, `coursename`, `term`, `year`, `grade`) VALUES ('58143033', 'นายพงศธร จันด้วง', 'SWE-204', 'โครงสร้างซอฟต์แวร์2', '1', '2018', 'F');
+INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentname`, `courseid`, `coursename`, `term`, `year`, `grade`) VALUES ('58144239', 'นายลิขสิทธิ์ สุขชาญ', 'SWE-204', 'โครงสร้างซอฟต์แวร์2', '1', '2018', 'D+');
+INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentname`, `courseid`, `coursename`, `term`, `year`, `grade`) VALUES ('58145236', 'นางสาวสุดารัตน์ ผิวอ่อน', 'SWE-206', 'การเขียนโปรแกรมเชิงวัตถุ', '1', '2018', 'F');
+INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentname`, `courseid`, `coursename`, `term`, `year`, `grade`) VALUES ('59141242', 'นางสาวณกรตา เปียทอง', 'SWE-214', 'ระบบฐานข้อมูล', '1', '2019', 'F');
+INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentname`, `courseid`, `coursename`, `term`, `year`, `grade`) VALUES ('60140852', 'นางสาวจุติมาศ มาลัย', 'SWE60-214', 'ระบบฐานข้อมูล', '2', '2019', 'D+');
+INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentname`, `courseid`, `coursename`, `term`, `year`, `grade`) VALUES ('60140365', 'นายกิตติพงษ์ ทูรย์ภานุประพันธ์', 'SWE60-214', 'ระบบฐานข้อมูล', '2', '2019', 'D');
+
 
 DROP TABLE IF EXISTS  sweregrade.`user`;
 CREATE TABLE sweregrade.`user` (
   `userid` int(10) NOT NULL auto_increment,
-  `username` varchar(45) COLLATE utf8_bin NOT NULL,
-  `password` varchar(18) COLLATE utf8_bin NOT NULL,
-  `Firstname` varchar(45) COLLATE utf8_bin NOT NULL,
-  `Lastname` varchar(45) COLLATE utf8_bin NOT NULL,
-  `role` varchar(10) COLLATE utf8_bin NOT NULL,
+  `username` varchar(45) COLLATE utf8_general_ci NOT NULL,
+  `password` varchar(18) COLLATE utf8_general_ci NOT NULL,
+  `Firstname` varchar(45) COLLATE utf8_general_ci NOT NULL,
+  `Lastname` varchar(45) COLLATE utf8_general_ci NOT NULL,
+  `role` varchar(10) COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`userid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58142753', 'swezaza01', 'นางสาวประภาพร', 'มั่งมี', 'นักศึกษา');
 INSERT INTO `sweregrade`.`user` (`username`, `password`, `Firstname`, `Lastname`, `role`) VALUES ('58143033', 'swezaza02', 'นายพงศธร', 'จันด้วง', 'นักศึกษา');
