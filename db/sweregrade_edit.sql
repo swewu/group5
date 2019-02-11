@@ -50,9 +50,9 @@ DROP TABLE IF EXISTS  sweregrade.`user`;
 CREATE TABLE sweregrade.`user` (
   `userid` int(10) NOT NULL auto_increment,
   `username` varchar(45) COLLATE utf8_bin NOT NULL,
+  `password` varchar(18) COLLATE utf8_bin NOT NULL,
   `Firstname` varchar(45) COLLATE utf8_bin NOT NULL,
   `Lastname` varchar(45) COLLATE utf8_bin NOT NULL,
-  `password` varchar(18) COLLATE utf8_bin NOT NULL,
   `role` varchar(10) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`userid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
