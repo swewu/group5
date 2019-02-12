@@ -50,12 +50,12 @@ CREATE TABLE sweregrade.`historygrade` (
   FOREIGN KEY (`userid`) REFERENCES `sweregrade`.`user` (`userid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
-INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentfirstname`, `studentlastname`, `courseid`, `coursename`, `term`, `year`, `grade`, `status`) VALUES ('58143033', 'นายพงศธร', ' จันด้วง', 'SWE-204', 'โครงสร้างซอฟต์แวร์2', '1', '2018', 'F', '1');
+INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentfirstname`, `studentlastname`, `courseid`, `coursename`, `term`, `year`, `grade`, `status`) VALUES ('58143033', 'นายพงศธร', 'จันด้วง', 'SWE-204', 'โครงสร้างซอฟต์แวร์2', '1', '2018', 'F', '1');
 INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentfirstname`, `studentlastname`, `courseid`, `coursename`, `term`, `year`, `grade`, `status`) VALUES ('58144239', 'นายลิขสิทธิ์ ', 'สุขชาญ', 'SWE-204', 'โครงสร้างซอฟต์แวร์2', '1', '2018', 'D+', '2');
-INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentfirstname`, `studentlastname`, `courseid`, `coursename`, `term`, `year`, `grade`, `status`) VALUES ('58145236', 'นางสาวสุดารัตน์', ' ผิวอ่อน', 'SWE-206', 'การเขียนโปรแกรมเชิงวัตถุ', '1', '2018', 'F', '2');
+INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentfirstname`, `studentlastname`, `courseid`, `coursename`, `term`, `year`, `grade`, `status`) VALUES ('58145236', 'นางสาวสุดารัตน์', 'ผิวอ่อน', 'SWE-206', 'การเขียนโปรแกรมเชิงวัตถุ', '1', '2018', 'F', '2');
 INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentfirstname`, `studentlastname`, `courseid`, `coursename`, `term`, `year`, `grade`, `status`) VALUES ('59141242', 'นางสาวณกรตา ', 'เปียทอง', 'SWE-214', 'ระบบฐานข้อมูล', '1', '2019', 'F', '1');
-INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentfirstname`, `studentlastname`, `courseid`, `coursename`, `term`, `year`, `grade`, `status`) VALUES ('60140852', 'นางสาวจุติมาศ', ' มาลัย', 'SWE60-214', 'ระบบฐานข้อมูล', '2', '2019', 'D+', '1');
-INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentfirstname`, `studentlastname`, `courseid`, `coursename`, `term`, `year`, `grade`, `status`) VALUES ('60140365', 'นายกิตติพงษ์', ' ทูรย์ภานุประพันธ์', 'SWE60-214', 'ระบบฐานข้อมูล', '2', '2019', 'D', '2');
+INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentfirstname`, `studentlastname`, `courseid`, `coursename`, `term`, `year`, `grade`, `status`) VALUES ('60140852', 'นางสาวจุติมาศ', 'มาลัย', 'SWE60-214', 'ระบบฐานข้อมูล', '2', '2019', 'D+', '1');
+INSERT INTO `sweregrade`.`historygrade` (`studentid`, `studentfirstname`, `studentlastname`, `courseid`, `coursename`, `term`, `year`, `grade`, `status`) VALUES ('60140365', 'นายกิตติพงษ์', 'ทูรย์ภานุประพันธ์', 'SWE60-214', 'ระบบฐานข้อมูล', '2', '2019', 'D', '2');
 
 
 DROP TABLE IF EXISTS  sweregrade.`user`;
