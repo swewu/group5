@@ -12,9 +12,9 @@
 </head>
 <form action="<?php echo site_url('Welcome/insert') ?>" method="get">
 <body>
-<center><form>
+<form>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -23,20 +23,21 @@
     </ul>
   </div>
 </nav>
+<center>
 <div class="card" style="width: 50%;">
 
 <div class="container">
   <br>
-  <div class="row">
-   รหัสนักศึกษา :
-      <div class="form-group" style="width: 8rem;">
-        <input type="text" class="form-control" id="Id"  placeholder="รหัสนักศึกษา">  
-      </div>
-  </div>
+  
 </div>
-  <div class="card-body">
+
+  <div class="card-body" backgroundcolor="#ffff">
   
   <div class="row" style="width: 30rem;">
+  <div class="col">
+    <label for="Id">รหัสนักศึกษา : </label>
+      <input type="text" class="form-control" name ="studentname" placeholder="รหัสนักศึกษา">
+    </div>
     <div class="col">
     <label for="Id">ชื่อ : </label>
       <input type="text" class="form-control" name ="studentname" placeholder="ชื่อ">
@@ -57,37 +58,35 @@
       <input type="text" class="form-control"name="coursename" placeholder="ชื่อวิชา">
     </div>
   </div>
-  <div class="col">
-    <label for="Id">เกรด : </label>
-      <input type="text" class="form-control"name="grade" placeholder="ชื่อวิชา">
-    </div>
-  </div>
-  <br>
+
   <div class="row" style="width: 30rem;">
     <div class="col">
+    <label for="Id">เกรด : </label>
+      <input type="text" class="form-control" name="courseid" placeholder="เกรด">
+    </div>
+    <div class="col">
     <label for="Id">เทอม : </label>
-      <input type="text" class="form-control"name="term" placeholder="เทอม">
+      <input type="text" class="form-control"name="coursename" placeholder="เทอม">
     </div>
     <div class="col">
     <label for="Id">ปีการศึกษา : </label>
-      <input type="text" class="form-control"name="year" placeholder="ปีการศึกษา">
+      <input type="text" class="form-control"name="coursename" placeholder="ปีการศึกษา">
     </div>
-    <div class="col">
-    
   </div>
-  <br>
-  <div align="center">
-  <button type="submit" class="btn btn-primary">Submit</button></div>
-</form>
-
-
-</div>
-</div>
+  <center>
+<br>
   
-  </form>
+  
+  <button type="submit" class="btn btn-primary">Submit</button></div>
+
 </center>
 
-     
+</div>
+</div>
+  </center>
+  </form>
+
+
 
     
 </body>
