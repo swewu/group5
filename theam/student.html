@@ -55,12 +55,23 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link collapsed" href="moreSubStd.html" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
           <span>เพิ่มรายวิชาตกค้าง</span>
         </a>
       </li>
-
+      <li class="nav-item">
+          <a class="nav-link collapsed" href="moreSubStd.html" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>แก้ไขรายวิชาตกค้าง</span>
+          </a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link collapsed" href="moreSubStd.html" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>ลบรายวิชาตกค้าง</span>
+          </a>
+      </li>
       
 
       
@@ -81,17 +92,7 @@
             <i class="fa fa-bars"></i>
           </button>
 
-          <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
-              </div>
-            </div>
-          </form>
+         
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -157,8 +158,66 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">ยินดีต้อนรับเข้าสู่ระบบตรวจสอบรายวิชาตกค้าง</h1>
+            <h1 class="h3 mb-0 text-gray-800">ระบบตรวจสอบรายวิชาตกค้าง</h1>
           </div>
+
+
+          <form>
+            <fieldset disabled>
+              <div class="col-sm-3 my-1">
+                <div class="form-group">
+                  <label for="disabledTextInput">ข้อมูลนักศึกษา</label>
+                  <input type="text" id="disabledTextInput" class="form-control" placeholder="รหัสนักศึกษา">
+                </div> 
+            </fieldset>
+          </form>
+          <form>
+            <fieldset disabled>
+              <div class="col-sm-5 my-1">
+                <div class="form-group">
+                  <input type="text" id="disabledTextInput" class="form-control" placeholder="ชื่อ-นามสกุล">
+                </div>
+              </div>
+            </fieldset>
+          </form>
+
+          <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">CourseId</th>
+                  <th scope="col">CourseName</th>
+                  <th scope="col">Term</th>
+                  <th scope="col">Year</th>
+                  <th scope="col">Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">SWE60-112</th>
+                  <td>C Programming</td>
+                  <td>2</td>
+                  <td>2561</td>
+                  <td>F</td>
+                </tr>
+                <tr>
+                    <th scope="row">SWE60-112</th>
+                    <td>C Programming</td>
+                    <td>2</td>
+                    <td>2561</td>
+                    <td>F</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">SWE60-112</th>
+                      <td>C Programming</td>
+                      <td>2</td>
+                      <td>2561</td>
+                      <td>F</td>
+                    </tr>
+              </tbody>
+            </table>
+
+
+          </div>      
 
           <!-- Content Row -->
           <div class="row">
