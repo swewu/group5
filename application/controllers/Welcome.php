@@ -2,6 +2,14 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
+	// function __construct() {
+	// 	parent::__construct();
+	// 	$this->load->model('User_model');
+	// 	$this->load->helper('form');
+	// 	$this->load->database();
+
+	// }
+
 
 	/**
 	 * Index Page for this controller.
