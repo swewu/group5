@@ -82,20 +82,6 @@ class Welcome extends CI_Controller {
 		}
 			
 	}
-<<<<<<< HEAD
- 
-	public  function getData(){
-		$history = $this->getData();
-		$data['history']=$history;
-		$this->load->view('ShowData',$data);
-
-	}
-	public function gethistory(){
-		$this->load->model('Usermodel');
-		$result = $this->User_model->gethistory();
-		return $result;
-	}
-=======
 
 	public function delete(){
 		$historyid  = isset($_GET['historyid'])?$_GET['historyid']:"";
@@ -151,7 +137,6 @@ class Welcome extends CI_Controller {
 	}
 
 	
->>>>>>> b61eb9f1a72c2ab38a81e8ac178dcdeafe3896ae
 	
 
 }
