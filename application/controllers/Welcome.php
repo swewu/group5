@@ -28,8 +28,8 @@ class Welcome extends CI_Controller {
 	}
 	public function Course()
 	{
-		$this->load->view('Course');
-		$this->load->view('Script');
+		$this->load->view('Course/Contents');
+		// $this->load->view('Script');
 	}
 	public function checkLogin(){
 		$id  = isset($_GET['username'])?$_GET['username']:"";
@@ -117,6 +117,18 @@ class Welcome extends CI_Controller {
 		
 			
 	}
+	public function showdata(){
+		$studentid = $_SESSION['userid'];
+		$this->load->model('UserModel');
+		$result = $this->UserModel->display($studentid);
+		$data = [
+			'result' => $result
+		];
+		$this->load->view("Course/Contents",$data);
+
+	}
+
+	
 	
 
 }
