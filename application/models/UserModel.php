@@ -63,5 +63,15 @@ class UserModel extends CI_Model
         
     }
 
+    public function display($studentid){
+        // $sql ="SELECT * FROM history where studentid = '".$studentid."' ";
+        
+        $sql = "SELECT * FROM historygrade WHERE studentid = '".$studentid."'";
+        $query = $this->db->query($sql);
+        // var_dump($query->result());
+        // echo $query;
+        return $query->result();
+    }
+
     
 }
