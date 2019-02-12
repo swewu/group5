@@ -34,8 +34,13 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('Students/Contents');
 	}
+	public function teacher()
+	{
+		$this->load->view('teacher');
+	}
 	public function Course()
 	{
+	
 		$this->load->view('Course/Contents');
 		// $this->load->view('Script');
 	}
@@ -49,8 +54,9 @@ class Welcome extends CI_Controller {
 			// echo($_SESSION['role']);
 			
 			if($_SESSION['role'] == "นักศึกษา"){
-				
-				redirect('Welcome/student');
+				redirect('Welcome/showdata');
+				// $this->load->view('Course/Contents');
+				// redirect('Welcome/student');
 			}else if($_SESSION['role'] == "อาจารย์"){
 				redirect('Welcome/teacher');
 			}

@@ -66,10 +66,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		box-shadow: 0 0 8px #D0D0D0;
 	}
 	</style>
-</head>
-<body style="background-color: #2542ff;">
+<!-- </head> -->
+<!-- <body style="background-color: #2542ff;"> -->
 
-<div class="container">
+<!-- <div class="container">
 	<div class="card" style="width: 50%; margin-left: 25%; margin-top: 10%; font-family: 'Kanit', sans-serif;">
 		<div class="card-body">
 			<h1 style="font-family: 'Kanit', sans-serif; font-size: 30px;">ระบบบันทึกรายวิชาที่ตกค้าง</h1>
@@ -82,10 +82,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<label for="exampleInputPassword1">รหัสผ่าน</label>
 					<input type="password" class="form-control" id="password" name="password" placeholder="รหัสผ่าน">
 				</div>
-				<!-- <div class="form-group form-check">
-					<input type="checkbox" class="form-check-input" id="exampleCheck1">
-					<label class="form-check-label" for="exampleCheck1">Check me out</label>
-				</div> -->
+				
 				
 				
 					<button type="login" class="btn btn-primary">Submit</button>
@@ -93,14 +90,99 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</form>
 		</div>
 	</div>
-</div>
+</div> -->
 
 
-<!-- <form action="<?php echo base_url('Login/login') ?>" method="get">
-	<input type="text" name="id" placeholder="id" required>
-	<input type="text" name="password" placeholder="password" required>
-	<input type="submit" value="Login"></form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ระบบตรวจสอบรายวิชาตกค้าง</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+<form action="<?php echo site_url('Welcome/checkLogin') ?>" method="get">
+<!-- C:\xampp\htdocs\group5\theam\img\2.jpg -->
+
+<body background = "<?php echo base_url();?>/theam/img/2.jpg" width="100%">
+
+  <div class="container">
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+      <div class="col-xl-10 col-lg-12 col-md-9">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+			  <!-- Nested Row within Card Body -->
+              <div class="col-lg-6 d-none d-lg-block"><img src="<?php echo base_url();?>theam/img/4.jpg"></div>
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">ระบบตรวจสอบรายวิชาตกค้าง</h1>
+                  </div>
+                  <form class="user">
+                    <div class="form-group">
+                      <input type="text" class="form-control form-control-user" id="username" name="username"  placeholder="ชื่อผู้ใช้งาน">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="รหัสผ่าน">
+                    </div>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox small">
+                        <input type="checkbox" class="custom-control-input" id="customCheck">
+                        <label class="custom-control-label" for="customCheck">Remember Me</label>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-user btn-block">
+                      Login
+                    </button>
+                  </form>
+                  <div class="text-center">
+                    <a class="small" href="forgot-password.html">Forgot Password?</a>
+                  </div>
+                  <div class="text-center">
+                    <a class="small" href="register.html">Create an Account!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 </form>
 
+  <!-- Bootstrap core JavaScript-->
+  <script src="<?php echo base_url();?>theam/vendor/jquery/jquery.min.js"></script>
+  <script src="<?php echo base_url();?>theam/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="<?php echo base_url();?>theam/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="<?php echo base_url();?>theam/js/sb-admin-2.min.js"></script>
+
 </body>
-</html> -->
+
+</html>

@@ -57,9 +57,9 @@
       <input type="text" class="form-control"name="coursename" placeholder="ชื่อวิชา">
     </div>
   </div>
-  <div class="col">
+  <div class="row">
     <label for="Id">เกรด : </label>
-      <input type="text" class="form-control"name="grade" placeholder="ชื่อวิชา">
+      <input type="text" class="form-control"name="grade" placeholder="เกรด">
     </div>
   </div>
   <br>
